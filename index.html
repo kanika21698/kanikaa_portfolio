@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanika Bhadoriya Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="intro">
+    <img src="your-photo.jpg" alt="Kanika Bhadoriya">
+    <h1>Kanika Bhadoriya</h1>
+    <p>BBA Student | Finance Specialization</p>
+  </section>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      Enthusiastic fresher with high motivation and leadership skills. Dedicated and ambitious undergraduate specializing in Finance. Eager to apply knowledge and passion for finance in a dynamic professional setting. Possess analytical skills, attention to detail, and a strong work ethic.
+    </p>
+  </section>
+
+  <section class="education">
+    <h2>Education</h2>
+    <p>Bachelor of Business Administration (BBA)<br>Amity University, 2022–2025</p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Financial Reporting</li>
+      <li>Financial Analysis</li>
+      <li>Google Sheets</li>
+      <li>Excel</li>
+      <li>Budgeting</li>
+      <li>Decision Making</li>
+      <li>Critical Thinking</li>
+      <li>Accounting</li>
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Research Paper on “Digital Marketing: A Powerful Marketing Tool”</li>
+      <li>Summer Internship Report on “Financial Risk Management in the Packaging Industry”</li>
+    </ul>
+  </section>
+
+  <section class="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Financial Risk Analytics</li>
+      <li>Microsoft Excel</li>
+      <li>Project Management</li>
+    </ul>
+  </section>
+
+  <section class="experience">
+    <h2>Work Experience</h2>
+    <ul>
+      <li>The Website Makers – Digital Marketing Intern (Feb–Apr 2024)</li>
+      <li>Humari Pahchan NGO – Social Volunteer and Intern (June–Nov 2023)</li>
+      <li>Montage Enterprises Pvt. Ltd. – Finance Intern (June–July 2024)</li>
+      <li>Riwaazz – Marketing and Finance Intern (Aug–Sept 2024)</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Email: <a href="mailto:kanikabhadoriya42@gmail.com">kanikabhadoriya42@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/kanika-bhadoriya-319541285" target="_blank">View Profile</a></p>
+    <p>Phone: +91 7999656174</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section, footer");
+
+    window.addEventListener("scroll", () => {
+      sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if(top < windowHeight - 100){
+          sec.classList.add("visible");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
